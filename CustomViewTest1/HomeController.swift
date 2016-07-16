@@ -45,14 +45,10 @@ class HomeController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         
-      //  cellSize = 1
-        
         let newAttributes = Attributes(inputIndex: indexPath.item)
         newAttributes.imageConstraintText = "H:|-16-[v0]-1-|"
-        
-//        let rect = CGRect(x: 0, y: 0, width: 100, height: 100)
-    
-        var cell: NewAppCell //(frame: rect, subViewColor: UIColor.brownColor(), subViewMessage: "Testing\(indexPath.item)")
+            
+        var cell: NewAppCell
         
         cell = collectionView.dequeueReusableCellWithReuseIdentifier(cellId, forIndexPath: indexPath) as! NewAppCell
         

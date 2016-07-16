@@ -108,16 +108,17 @@
                     <connections>
                         <outlet property="collectionView" destination="0Tb-Lj-Rm4" id="stW-2o-tmy"/>
                         <segue destination="kO1-sq-f6D" kind="show" id="ihD-ro-EfG"/>
+                        <segue destination="QXL-7b-tAe" kind="show" id="AZe-Nn-Qzo"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Csc-St-13M" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="607" y="258"/>
         </scene>
-        <!--View Controller-->
+        <!--Category DetailsVC-->
         <scene sceneID="b8r-AH-fEU">
             <objects>
-                <viewController id="kO1-sq-f6D" sceneMemberID="viewController">
+                <viewController id="kO1-sq-f6D" customClass="CategoryDetailsVC" customModule="CustomViewTest1" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lk8-Ka-OxI"/>
                         <viewControllerLayoutGuide type="bottom" id="pgC-gd-Pbu"/>
@@ -127,10 +128,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="hmE-UX-oPn" kind="show" id="rtI-LI-Yza"/>
+                        <segue destination="QXL-7b-tAe" kind="show" id="YD2-El-c0c"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="G6L-Il-Ro5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1349" y="258"/>
         </scene>
+        <!--CheckoutVC-->
+        <scene sceneID="Vtr-H5-Iba">
+            <objects>
+                <viewController id="QXL-7b-tAe" customClass="CheckoutVC" customModule="CustomViewTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Idk-m6-ioZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="et0-2O-MuK"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="t1s-id-ia3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="9at-kZ-sWq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1349" y="1135"/>
+        </scene>
+        <!--Item Details-->
+        <scene sceneID="MkE-Yq-9KE">
+            <objects>
+                <viewController id="hmE-UX-oPn" userLabel="Item Details" customClass="ItemDetailsVC" customModule="CustomViewTest1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="3Kb-xE-se7"/>
+                        <viewControllerLayoutGuide type="bottom" id="Gnm-ni-pWU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vui-gH-a0I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="QXL-7b-tAe" kind="show" id="Q3t-sf-4mr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lxV-FS-HsV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2079" y="258"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Q3t-sf-4mr"/>
+    </inferredMetricsTieBreakers>
 </document>
